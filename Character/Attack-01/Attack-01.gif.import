@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cjumxcrwvbj2w"
+path="res://.godot/imported/Attack-01.gif-11f0e9c31d67b1456011a63eb7a9b3fb.tres"
+
+[deps]
+
+source_file="res://Character/Attack-01/Attack-01.gif"
+dest_files=["res://.godot/imported/Attack-01.gif-11f0e9c31d67b1456011a63eb7a9b3fb.tres"]
+
+[params]
+
+frames_per_second=30

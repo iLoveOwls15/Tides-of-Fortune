@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://3fxb7u3cpi6f"
+path="res://.godot/imported/Dead.gif-a71b758f2f9bcc555fd777a2e364e20b.tres"
+
+[deps]
+
+source_file="res://Character/Dead/Dead.gif"
+dest_files=["res://.godot/imported/Dead.gif-a71b758f2f9bcc555fd777a2e364e20b.tres"]
+
+[params]
+
+frames_per_second=30

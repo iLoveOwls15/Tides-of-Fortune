@@ -8,30 +8,32 @@ extends CharacterBody2D
 var jump_count = 0
 
 func _physics_process(delta: float) -> void:
-	# Apply gravity if not on the floor
+	#apply gravity if not on the floor
 	if not is_on_floor():
 		velocity.y += gravity
 		if velocity.y > 2000:
 			velocity.y = 2000
 
-	# Handle jumping logic (play jump animation when in the air)
-	# Handle left and right movement
+	#Handle left and right movement
 	if Input.is_action_pressed("left"):
 		velocity.x = -max_speed
-		$AnimatedSprite2D.flip_h = true  # Flip sprite for left movement
+		$AnimatedSprite2D.flip_h = true  #Flip sprite for left movement
 	elif Input.is_action_pressed("right"):
 		velocity.x = max_speed
-		$AnimatedSprite2D.flip_h = false  # Flip sprite for right movement
+		$AnimatedSprite2D.flip_h = false  #Flip sprite for right movement
 	else:
-		velocity.x = 0  # No horizontal movement if no input
+		velocity.x = 0  #stay still
+	if Input.is_action_pressed("left") and Input.is_action_pressed("right"):
+		velocity.x = 0
+		$AnimatedSprite2D.flip_h = false
 
-	# Handle attack animation priority over movement animations
+	#Handle attack animation priority other movement animations
 	if Input.is_action_pressed("attack"):
 		jump_count = 2 #only double jump if not attacking
 		animation.play("attack")
 		velocity.x *= 0.2
 	elif is_on_floor():
-		# f not attacking and on the floor, handle movement animations
+		#if not attacking and on the floor, handle movement animations
 		if velocity.x != 0:
 			animation.play("run") 
 		else:
@@ -50,7 +52,7 @@ func _physics_process(delta: float) -> void:
 	elif Input.is_action_just_pressed("jump") and jump_count == 1:
 		velocity.y = -jump_force
 		jump_count = 2
-		animation.play("jump")
+		animation.play("double_jump")
 
-	# Move the character
+	
 	move_and_slide()

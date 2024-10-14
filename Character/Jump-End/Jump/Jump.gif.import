@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://b4cyef2ktacji"
+path="res://.godot/imported/Jump.gif-9b1c6387af0b69a1b34bdb5ad7086775.tres"
+
+[deps]
+
+source_file="res://Character/Jump-End/Jump/Jump.gif"
+dest_files=["res://.godot/imported/Jump.gif-9b1c6387af0b69a1b34bdb5ad7086775.tres"]
+
+[params]
+
+frames_per_second=30

@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://ckuqihlx3ipsm"
+path="res://.godot/imported/Run.gif-ff481164c76f103b30a4fae52136f158.tres"
+
+[deps]
+
+source_file="res://Character/Run/Run.gif"
+dest_files=["res://.godot/imported/Run.gif-ff481164c76f103b30a4fae52136f158.tres"]
+
+[params]
+
+frames_per_second=30
